@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#cajero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 750px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+    background: black;
+    border-radius: 30px;
+}
+#arriba{
+    text-align:center;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+#bajo{
+    width: 100%;
+    height: 50%;
+    background-color: brown;
+}
+#arriba_derecha{
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: darkgrey;
+}
+.boton{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+
+#arriba_izquierda{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: darkgrey;
+}
+#arriba_pantalla{
+    display:inline-block;
+    width: 60%;
+    height: 100%;
+    background-color:gold;
+}
+#abajo_derecha{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: darkgrey;
+}
+#numeros{
+    float: left;
+    text-align:center;
+    width: 70%;
+    height: 90%;
+    background-color: darkgrey;
+}
+.botonuno{
+    float: left;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botondos{
+    display:inline-block;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botontres{
+    float: right;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botoncuatro{
+    float: left;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botoncinco{
+    display:inline-block;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botonseis{
+    float: right;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botonsiete{
+    float: left;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botonocho{
+    display:inline-block;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botonnueve{
+    float: right;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botoncero{
+    display:inline-block;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botonpunto{
+    float: right;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+#botones_operacion{
+    float: right;
+    text-align:center;
+    width: 30%;
+    height: 90%;
+    background-color: darkgrey;
+}
+.botoncancelar{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botoncrear{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+.botonok{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(37, 36, 36);
+    border: 1px solid rgb(153, 149, 149);
+    color: rgb(165, 161, 161);
+    margin-top: 20px;
+    font-size: 24px;
+    
+}
+
+#abajo_izquierda{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: darkgrey;
+}
