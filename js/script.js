@@ -1,5 +1,6 @@
 var x=document.getElementById("clave");
 var canti=document.getElementById("cant");
+var saldo=1000;
 
 function numero(n){
     var s=x.value;
@@ -18,7 +19,7 @@ class Usuario{
     validar(){
         
         var x; 
-        if(this.clave=='123'){
+        if(this.clave=='12345678'){
             x = 1;
         }else{
             x = 0;
@@ -42,12 +43,18 @@ function ok(){
     }
 };
 function ok2(){
-    
-    if(cantidad()%10==0){
-        alert("si")
-         
+    var men1=document.getElementById("mensaje1");
+    var men2=document.getElementById("mensaje2");
+    var men3=document.getElementById("mensaje3");
+    var l=cantidad();
+    if(l%10==0){
+         saldo=saldo-l;
+         men1.style.display = 'none';
+         men2.style.display = 'block';
+         alert(saldo);
     }else{
-        alert("no")
+        men1.style.display = 'none';
+        men3.style.display = 'block';
     }
     
 };
