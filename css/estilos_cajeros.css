@@ -13,13 +13,10 @@
     margin-left: -300px;
     background-color:rgb(139, 139, 139);
     border-radius: 30px;
-    z-index: 5;
 }
 .arriba{
-   
     width: 100%;
     height: 60%;
-    
 }
 #lado{
     text-align:center;
@@ -48,11 +45,8 @@
     border-bottom: 5px solid transparent ;
 }
 #abajo{
-   
-
     width: 100%;
     height: 40%;
-    color: black;
 }
 
 .triangulo_izquierdo{
@@ -124,6 +118,12 @@ h2{
     width: 60%;
     height: 90%;
 }
+#cantidad{
+    float: left;
+    text-align:center;
+    width: 60%;
+    height: 90%;
+}
 .boton_numero{
     float: left;
     width: 25%;
@@ -155,7 +155,7 @@ h2{
     font-size: 20px;
 }
 
-#abajo_izquierda{
+.abajo_izquierda{
     float: left;
     width: 50%;
     height: 100%;

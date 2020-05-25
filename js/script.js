@@ -1,16 +1,22 @@
 var x=document.getElementById("clave");
+var canti=document.getElementById("cant");
 
 function numero(n){
-    alert("nu");
     var s=x.value;
     x.value=s+n;
     return s;
+}
+function cantidad(n){
+    var cant_final=canti.value;
+    canti.value=cant_final+n;
+    return cant_final;
 }
 class Usuario{
     constructor(clave){
         this.clave = clave;
     };
     validar(){
+        
         var x; 
         if(this.clave=='123'){
             x = 1;
@@ -29,21 +35,79 @@ function ok(){
         var l = document.getElementById("login_botones");
         var m = document.getElementById("menu_botones");
         if (l.style.display == 'block'){
-            alert(hola);
             l.style.display = 'none';
             m.style.display = 'block';
+            
         }
     }
+};
+function ok2(){
     
-}
+    if(cantidad()%10==0){
+        alert("si")
+         
+    }else{
+        alert("no")
+    }
+    
+};
 
-function primero_(){
+
+function primero_menu(){
         var m = document.getElementById("menu_botones");
         var r = document.getElementById("retiro");
         if (m.style.display == 'block'){
             m.style.display = 'none';
             r.style.display = 'block';
         }
-    }
     
-}
+    
+};
+
+function primero_retiro(){
+    var r = document.getElementById("retiro");
+    var rs = document.getElementById("retiro_soles");
+    if (r.style.display == 'block'){
+        r.style.display = 'none';
+        rs.style.display = 'block';
+    }
+
+
+};
+
+function septimo_retiro_soles(){
+    var rs = document.getElementById("retiro_soles");
+    var o = document.getElementById("otras_cantidades");
+    var n = document.getElementById("abajo_izquierda_uno");
+    var c = document.getElementById("abajo_izquierda_dos");
+    if (rs.style.display == 'block'){
+        rs.style.display = 'none';
+        o.style.display = 'block';
+        n.style.display = 'none';
+        c.style.display = 'block';
+    }
+
+
+};
+
+function sexto_otras_cantidades(){
+    var o = document.getElementById("otras_cantidades");
+    var t = document.getElementById("transaccion");
+    if (o.style.display == 'block'){
+        o.style.display = 'none';
+        t.style.display = 'block';
+        
+    }
+
+
+};
+function octavo_transaccion(){
+    var t = document.getElementById("transaccion");
+    var g = document.getElementById("gracias");
+    if (t.style.display == 'block'){
+        t.style.display = 'none';
+        g.style.display = 'block';
+    }
+
+
+};
