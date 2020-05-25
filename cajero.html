@@ -8,47 +8,265 @@
   
 </head>
 <body>
-    <section id="cajero">
-        <section id="arriba">
-            <section id="arriba_derecha">
-                <button class="boton" id="boton" onclick=""></i></button>
-                <button class="boton" id="boton" onclick=""></i></button>
-                <button class="boton" id="boton" onclick=""></i></button>
-                <button class="boton" id="boton" onclick=""></i></button>
-            </section>
-            <section id="arriba_izquierda">
-                <button class="boton" id="boton" onclick=""></i></button>
-                <button class="boton" id="boton" onclick=""></i></button>
-                <button class="boton" id="boton" onclick=""></i></button>
-                <button class="boton" id="boton" onclick=""></i></button>
-            </section>
-            <section id="arriba_pantalla"></section>    
-        </section>
-        <section id="bajo">
-            <section id="abajo_derecha">
-                <section id="numeros">
-                    <button class="botonuno" id="botonuno" onclick=""></i>1</button>
-                    <button class="botondos" id="botondos" onclick=""></i>2</button>
-                    <button class="botontres" id="botontres" onclick=""></i>3</button>
-                    <button class="botoncuatro" id="botoncuatro" onclick=""></i>4</button>
-                    <button class="botoncinco" id="botoncinco" onclick=""></i>5</button>
-                    <button class="botonseis" id="botonseis" onclick=""></i>6</button>
-                    <button class="botonsiete" id="botonsiete" onclick=""></i>7</button>
-                    <button class="botonocho" id="botonocho" onclick=""></i>8</button>
-                    <button class="botonnueve" id="botonnueve" onclick=""></i>9</button>
-                    <button class="botoncero" id="botoncero" onclick=""></i>0</button>
-                    <button class="botonpunto" id="botonpunto" onclick=""></i>.</button>
+    <div id="cajero">
+        <div class="arriba" id="login_botones" style="display: block;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_login()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_login()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_login()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_login()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <section id="login">
+                    <h2>!Bienvenido al Banco¡
+                    <h4>Por favor digite su clave.</h4>
+                    <input type="password" id="clave">
                 </section>
+            </div>
+            <div id="lado">
+                <button class="boton" id="quinto" onclick="quinto_login()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto" onclick="sexto_login()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" onclick="septimo_login()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo" onclick="octavo_login()"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+        <div id="abajo">
+            <div id="abajo_izquierda">
+                <div id="numeros">
+                    <button class= "boton_numero" id="uno" onclick="numero('1')"></i>1</button>
+                    <button class= "boton_numero" id="dos" onclick="numero('2')"></i>2</button>
+                    <button class= "boton_numero" id="tres" onclick="numero('3')"></i>3</button>
+                    <button class= "boton_numero" id="cuatro" onclick="numero('4')"></i>4</button>
+                    <button class= "boton_numero" id="cinco" onclick="numero('5')"></i>5</button>
+                    <button class= "boton_numero" id="seis" onclick="numero('6')"></i>6</button>
+                    <button class= "boton_numero" id="siete" onclick="numero('7')"></i>7</button>
+                    <button class= "boton_numero" id="ocho" onclick="numero('8')"></i>8</button>
+                    <button class= "boton_numero" id="nueve" onclick="numero('9')"></i>9</button>
+                    <button class= "boton_numero" ></i></button>
+                    <button class= "boton_numero" id="cero" onclick="numero('0')"></i>0</button>
+                    <button class= "boton_numero" id="punto" onclick="numero('.')"></i>.</button>
+                </div>
 
-                <section id="botones_operacion">
-                    <button class="botoncancelar" id="botoncancelar" onclick=""></i>CANCELAR</button>
-                    <button class="botoncrear" id="botoncrear" onclick=""></i>CREAR</button>
-                    <button class="botonok" id="botonok" onclick=""></i>OK</button>
-                </section>
+                <div id="operaciones">
+                    <button class= "boton_operacion" id="cancel" style="background-color: red;" onclick="cancel()"></i>CANCEL</button>
+                    <button class= "boton_operacion" id="clear" style="background-color: orange;" onclick="clear()"></i>CLEAR</button>
+                    <button class= "boton_operacion" id="ok" style="background-color: green;" onclick="ok()"></i>OK</button>
+                    <button class= "boton_operacion" id="" style="background-color: gray;" ></i></button>
+                </div>
                 
-            </section>
-            <section id="abajo_izquierda"></section>
-        </section>
-    </section>
+            </div>
+            <div id="abajo_derecha"></div>
+        </div>
+
+
+        <div class="arriba" id="menu_botones" style="display: none;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <h2>MENU PRINCIPAL</h2>
+                <section class="texto_pantalla" id="menu">
+                    <br><br><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">RETIRO</h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">TRANSFERENCIA</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">CONSULTA</h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">OPERACIONES</h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">ULTIMOS<br> MOVIMIENTOS</h3><br><br>
+                </section>
+            </div>
+            <div id="lado">
+                <button class="boton" id="quinto" onclick="quinto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto" onclick="sexto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" onclick="septimo_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo" onclick="octavo_()"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+
+
+        <div class="arriba" id="retiro" style="display: none;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <h2>RETIRO</h2>
+                <section class="texto_pantalla" id="menu">
+                    <br><br><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">RETIRO SOLES</h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">RETIRAR DOLARES </h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                </section>
+            </div>
+            <div id="lado">
+                <button class="boton" id="quinto" onclick="quinto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto" onclick="sexto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" onclick="septimo_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo" onclick="octavo_()"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+
+
+        <div class="arriba" id="retiro_soles" style="display: none;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <h2>RETIRO SOLES</h2>
+                <section class="texto_pantalla" id="menu">
+                    <br><br><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">S/.20 </h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">S/.100</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">S/.150</h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">S/.200</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda">S/.300</h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">OTRAS CANT.</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">CANCELAR</h3><br><br>
+                </section>
+            </div>
+            <div id="lado">
+                <button class="boton" id="quinto" onclick="quinto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto" onclick="sexto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" onclick="septimo_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo" onclick="octavo_()"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+
+
+        <div class="arriba" id="otras_cantidades" style="display: none;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <h2>INGRESA MONTO A RETIRAR EN MULTIPLOS DE 10</h2>
+                <section class="texto_pantalla" id="menu">
+                    <br><br><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">CONFIRMAR</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">CORREGIR</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">CANCELAR</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                </section>
+            </div>
+            <div id="lado">
+                <button class="boton" id="quinto" onclick="quinto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto" onclick="sexto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" onclick="septimo_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo" onclick="octavo_()"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+
+
+        <div class="arriba" id="transaccion" style="display: none;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <h2>TRANSACCION PROCESADA<br>¿DESEA REALIZAR OTRA TRANSACCION</h2>
+                <section class="texto_pantalla" id="menu">
+                    <br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha"></h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">SI</h3><br><br>
+                    <div class="triangulo_grande_iz"></div>
+                    <h3 id="izquierda"></h3>
+                    <div class="triangulo_grande_der"></div>
+                    <h3 id="derecha">NO</h3><br><br>
+                </section>
+            </div>
+            <div id="lado">
+                <button class="boton" id="quinto" onclick="quinto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto" onclick="sexto_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" onclick="septimo_()"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo" onclick="octavo_()"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+
+
+
+        <div class="arriba" id="gracias" style="display: none;">
+            <div id="lado">
+                <button class="boton" id="primero" onclick="primero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="segundo" onclick="segundo_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="tercero" onclick="tercero_()"></i><div class="triangulo_izquierdo"></div></button>
+                <button class="boton" id="cuarto" onclick="cuarto_()"></i><div class="triangulo_izquierdo"></div></button>
+            </div>
+            <div class="pantalla">
+                <h2>GRACIAS,<br>HASTA LUEGO </h2>
+                
+            </div>
+            <div id="lado">
+                <button class="boton" ></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="sexto"></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="septimo" ></i><div class="triangulo_derecho"></div></button>
+                <button class="boton" id="octavo"></i><div class="triangulo_derecho"></div></button>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
